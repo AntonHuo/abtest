@@ -133,12 +133,7 @@ for b in yearly_data_without_FQ:
 print(keys)
 
 dic = dict()
-amo = 3
 for ric1 in rics:
-    if amo < 0:
-        break
-    amo = amo - 1
-
     a = db_coll_ori.find_one({'ric': ric1})
 
     for key1 in keys:
