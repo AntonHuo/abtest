@@ -156,7 +156,7 @@ host = '127.0.0.1'
 port = 3306
 db = 'test'
 user = 'root'
-password = 'H19930918'
+password = 'osboxes.org'
 
 engine = create_engine(str(r"mysql+mysqldb://%s:" + '%s' + "@%s/%s") % (user, password, host, db))
 
