@@ -133,12 +133,7 @@ for b in yearly_data_without_FQ:
 print(keys)
 
 dic = dict()
-amo = 3
 for ric1 in rics:
-    if amo < 0:
-        break
-    amo = amo - 1
-
     a = db_coll_ori.find_one({'ric': ric1})
 
     for key1 in keys:
@@ -161,7 +156,7 @@ host = '127.0.0.1'
 port = 3306
 db = 'test'
 user = 'root'
-password = 'H19930918'
+password = 'osboxes.org'
 
 engine = create_engine(str(r"mysql+mysqldb://%s:" + '%s' + "@%s/%s") % (user, password, host, db))
 
